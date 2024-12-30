@@ -1,607 +1,88 @@
-
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt-BR">
 <head>
-  <title>TTT SIGNAL MAKER | IQ, Quotex</title>
-  <meta property="canonical" content="https://siofiltrosinais.com/" />
-  <meta property="keywords"
-    content="sinais iq option,sinais iq option grátis,sinais iq option ao vivo,sinais iq option telegram, sinais quotex, sinais qx, sinais binomo, sinais pocketoptin, sinais exnova, sinais bullex, catalogador quotex, catalogador exnova, catalogador bullex, catalogador pocketoption" />
-  <meta name="description"
-    content="Crie listas de sinais para todas as corretoras com o melhor catalogador de sinais. A melhor ferramenta trader com filtragem de sinais.">
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="./assets/style.css" rel="stylesheet" />
-  <link rel="apple-touch-icon" href="./icons/ico.png" />
-  <link rel="icon" href="./icons/ico.png" type="image/svg+xml" />
-  <style>
-    @media (max-width: 767px) {
-      .form-control[multiple] {
-        height: auto;
-      }
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <title>Catalogador de sinais e Filtros para Opções Binárias</title>
+    <meta name="theme-color" content="#121212">
+    <meta name="google-site-verification" content="NmkJV1Sp901ZD63le1YpY3smcnjbeptseASuXnq5p60">
+    <meta name="yandex-verification" content="cfb09f2d58fb9e45">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="msapplication-TileColor" content="#121212">
+    <meta name="msapplication-TileImage" content="./icons/ico.png">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="keywords" content="catalogador de sinais, catalogador de sinais IQ Option, catalogador de sinais gratuito, melhor catalogador de sinais, catalogador de sinais free, catalogador de sinais IQ Option gratis, catalogador de sinais OB, catalogação de sinais IQ, catalogador de lista de sinais, catalogador de sinais online, catalogador de sinais automatico, robô catalogador de sinais, melhor catalogador de sinais gratis, catalogador de sinais IQ Option free, catalogador de sinais IQ Option gratis, catalogador de sinais IQ Option grátis, catalogador para Quotex, catalogador de sinais para Quotex, catalogador Quotex, catalogador sinais OB, catalogador OB grátis, catalogador ob gratis, catalogador ob, catalogador de sinais grátis, IQ sinais, IQ Option sinais, sinais IQ, snais verificador, conversor de sinais, verificador de sinais IQ, verificar sinais IQ, sinais IQ Option, sinais Quotex">
+    <meta name="description" content="Crie listas de sinais para opções binárias com o melhor catalogador de sinais. A melhor ferramenta trader com filtragem de sinais.">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SIO | Ferramenta Trader">
+    <meta property="og:description" content="Crie listas de sinais para todas as corretoras com o melhor catalogador de sinais. A melhor ferramenta trader com filtragem de sinais.">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BotCloud">
+    <meta property="og:image" content="./icons/ico.png">
+    <meta property="og:image:secure_url" content="./icons/ico.png">
+    <meta property="og:image:alt" content="Thumbnail">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="210">
+    <meta property="og:image:height" content="197">
+    <!-- Favicon -->
+    <link rel="icon" href="./icons/ico.png" type="image/svg+xml">
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- External CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
-    form {
-      width: 94%;
-      margin: 0 10px;
-    }
+    <!-- Telegram Web App SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-    label {
-      display: inline-block;
-      font-size: 17px;
-      margin: 0 0 5px 5px;
-    }
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16636415644"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-16636415644');
+    </script>
 
-    .form-group {
-      margin-bottom: 10px;
-    }
-  </style>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Google Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9483437912028054"
+        crossorigin="anonymous"></script>
+
+    <!-- Event Snippet for Conversion Tracking -->
+    <script>
+        gtag('event', 'conversion', { 'send_to': 'AW-16636415644/HygTCMyjhMMZEJyd7vw9' });
+    </script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index.ce5da056.js"></script>
+  <link rel="stylesheet" href="/assets/index.13021abe.css">
 </head>
-
 <body>
-  <div class="preload-container">
-    <div class="magnifying-glass-container">
-      <i class="ph-light ph-magnifying-glass magnifying-glass"></i>
-    </div>
-    <div class="loading-message">LOADING</div>
-    <div class="progress-bar-container">
-      <div class="progress-bar">
-        <div class="progress"></div>
-      </div>
-      <div class="progress-percentage">0%</div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <div class="flex flex-col md:flex-row gap-5 md:gap-10 my-[10px] w-[95%] md:p-10 md:w-auto rounded-md">
-      <form>
-        <br />
-        <div class="carousel-container"><img alt="carousel image" id="image-display" src="" /></div>
-        <br />
-        <div class="language-selector">
-          <select id="language" onchange="changeLanguage()">
-            <option value="pt-br">🇧🇷 Português</option>
-            <option value="en">🇺🇸 English</option>
-            <option value="es">🇪🇦 Español</option>
-            <option value="bn">🇧🇩 Bengali</option>
-            <option value="hi">🇮🇳 Híndi</option>
-          </select>
-        </div>
-        <br />
-        <p class="titlebroker" style="color: white; font-size: 16px; font-weight: 600; margin: 0;">Catalogador de Sinais
-        </p>
-        <br />
-        <div class="form-group">
-          <i class="ph-light ph-coins"></i><label class="control-label" for="ativos"> Ativos:</label>
-          <select class="form-control" id="cbAtivo" name="cbAtivo" multiple multiselect-select-all="true">
-          </select>
-        </div>
-        <div class="form-group">
-          <i class="ph-light ph-percent"></i><label class="control-label" for="selPercentageMin"> Porcentagem
-            mínima:</label>
-          <select class="form-control" id="selPercentageMin" name="minutos_offset"></select>
-        </div>
-        <div class="form-group" style="display: none;">
-          <i class="ph-light ph-percent"></i><label class="control-label" for="selPercentageMax"> Porcentagem
-            máxima:</label>
-          <select class="form-control" id="selPercentageMax" name="minutos_offset"></select>
-        </div>
-        <div class="form-group">
-          <i class="ph-light ph-columns"></i><label class="control-label" for="ativos"> Timeframe:</label>
-          <select class="form-control" id="selCandleTime" name="cbTimeFrame" onchange="updateMinuteFilterOptions()">
-          </select>
-        </div>
-        <div class="form-group" id="minuteFilterContainerM1" style="display:none;">
-          <i class="ph-light ph-clock-countdown"></i><label class="control-label" for="selMinuteFilterM1"> Remover
-            minutos:</label>
-          <select class="form-control" id="selMinuteFilterM1" multiple>
-            <option value="00">:00</option>
-            <option value="01">:01</option>
-            <option value="02">:02</option>
-            <option value="03">:03</option>
-            <option value="04">:04</option>
-            <option value="05">:05</option>
-            <option value="06">:06</option>
-            <option value="07">:07</option>
-            <option value="08">:08</option>
-            <option value="09">:09</option>
-            <option value="10">:10</option>
-            <option value="11">:11</option>
-            <option value="12">:12</option>
-            <option value="13">:13</option>
-            <option value="14">:14</option>
-            <option value="15">:15</option>
-            <option value="16">:16</option>
-            <option value="17">:17</option>
-            <option value="18">:18</option>
-            <option value="19">:19</option>
-            <option value="20">:20</option>
-            <option value="21">:21</option>
-            <option value="22">:22</option>
-            <option value="23">:23</option>
-            <option value="24">:24</option>
-            <option value="25">:25</option>
-            <option value="26">:26</option>
-            <option value="27">:27</option>
-            <option value="28">:28</option>
-            <option value="29">:29</option>
-            <option value="30">:30</option>
-            <option value="31">:31</option>
-            <option value="32">:32</option>
-            <option value="33">:33</option>
-            <option value="34">:34</option>
-            <option value="35">:35</option>
-            <option value="36">:36</option>
-            <option value="37">:37</option>
-            <option value="38">:38</option>
-            <option value="39">:39</option>
-            <option value="40">:40</option>
-            <option value="41">:41</option>
-            <option value="42">:42</option>
-            <option value="43">:43</option>
-            <option value="44">:44</option>
-            <option value="45">:45</option>
-            <option value="46">:46</option>
-            <option value="47">:47</option>
-            <option value="48">:48</option>
-            <option value="49">:49</option>
-            <option value="50">:50</option>
-            <option value="51">:51</option>
-            <option value="52">:52</option>
-            <option value="53">:53</option>
-            <option value="54">:54</option>
-            <option value="55">:55</option>
-            <option value="56">:56</option>
-            <option value="57">:57</option>
-            <option value="58">:58</option>
-            <option value="59">:59</option>
-          </select>
-        </div>
-        <div class="form-group" id="minuteFilterContainerM5" style="display:none;">
-          <i class="ph-light ph-clock-countdown"></i><label class="control-label" for="selMinuteFilterM5"> Remover
-            minutos:</label>
-          <select class="form-control" id="selMinuteFilterM5" multiple>
-            <option value="00">:00</option>
-            <option value="05">:05</option>
-            <option value="10">:10</option>
-            <option value="15">:15</option>
-            <option value="20">:20</option>
-            <option value="25">:25</option>
-            <option value="30">:30</option>
-            <option value="35">:35</option>
-            <option value="40">:40</option>
-            <option value="45">:45</option>
-            <option value="50">:50</option>
-            <option value="55">:55</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <i class="ph-light ph-calendar"></i><label class="control-label" for="selDays"> Dias:</label>
-          <select class="form-control" id="selDays" name="ValoresParaVerificar"></select>
-        </div>
-        <div class="form-group">
-          <i class="ph-light ph-arrows-counter-clockwise"></i><label class="control-label" for="ativos"> Gales:</label>
-          <select class="form-control" id="selMartingales" name="cbTimeFrame">
-            <option selected="" value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <i class="ph-light ph-arrows-down-up"></i><label class="control-label" for="ativos"> Direção:</label>
-          <select class="form-control" id="selOrderType" name="cbTimeFrame">
-            <option selected="" value="PUT">PUT</option>
-            <option value="CALL">CALL</option>
-          </select>
-        </div>
-        <div class="form-group" style="margin: 0px;" id="timeInputsContainer">
-          <i class="ph-light ph-clock-countdown"></i><label class="control-label" for="startTime"> Início da
-            lista:</label>
-          <input class="form-control" type="time" id="startTime" name="startTime" required
-            style="margin: 0 0 10px 0;" />
-          <i class="ph-light ph-clock-countdown"></i><label class="control-label" for="endTime"> Fim da lista:</label>
-          <input class="form-control" type="time" id="endTime" name="endTime" required />
-        </div>
-        <div id="removeDuplicatesCheckboxContainer" class="checkbox-container" style="margin-top: 15px;">
-          <label for="removeDuplicatesCheckbox" class="checkbox-label">Remover horários duplicados</label>
-          <input type="checkbox" id="removeDuplicatesCheckbox" class="styled-checkbox">
-          <label for="removeDuplicatesCheckbox" class="checkbox-custom-label"></label>
-        </div>
-        <div id="tomorrowCheckboxContainer" class="checkbox-container" style="display:none;margin-top: 5px;">
-          <label for="tomorrowCheckbox" class="checkbox-label">Amanhã</label>
-          <input type="checkbox" id="tomorrowCheckbox" class="styled-checkbox">
-          <label for="tomorrowCheckbox" class="checkbox-custom-label"></label>
-        </div>
-        <div id="otcCheckboxContainer" class="checkbox-container" style="margin-top: 5px;">
-          <label for="otcCheckbox" class="checkbox-label">OTC</label>
-          <input type="checkbox" id="otcCheckbox" class="styled-checkbox">
-          <label for="otcCheckbox" class="checkbox-custom-label"></label>
-        </div>
-        <br />
-        <div class="d-flex justify-content-between mt-3">
-          <button class="btn btn-primary btn-lg" id="buttonX1" onclick="goBack()" type="button">
-            <i class="ph-light ph-arrow-bend-up-left" style="color:white;"></i>
-          </button>
-          <div class="flex-grow-1"></div>
-          <button class="btn btn-primary btn-lg" id="buttonX" onclick="startPreload(); saveSelections();" type="button">
-            <i class="ph-light ph-play" style="color:white;"></i>
-          </button>
-        </div>
-        <br />
-      </form>
-    </div>
-  </div>
-  <div class="modal" id="myModal">
-    <div class="modal-content">
-      <textarea class="textAreaValue" id="myText" type="text">Carregando...</textarea>
-      <div id="copyNotification" style="display: none; margin-top: 18px; color: white; font-weight: bold;">Copiado |
-        Copied</div>
-      <div style="display: flex; justify-content: space-around; align-items: center; margin: 20px 0 10px 0;">
-        <i onclick="copy()" class="ph-light ph-copy" style="color: white; font-size: 26px; margin: 0;"></i>
-        <i class="closes ph ph-x-circle" style="color: white; font-size: 26px; margin: 0;"></i>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="./assets/multiselect-dropdown.js"></script>
-
-  <script type="text/javascript">
-    function loadCSS(e, t, n) {
-      'use strict';
-      var i = window.document.createElement('link');
-      var o = t || window.document.getElementsByTagName('script')[0];
-      i.rel = 'stylesheet';
-      i.href = e;
-      i.media = 'only x';
-      o.parentNode.insertBefore(i, o);
-      setTimeout(function () {
-        i.media = n || 'all';
-      });
-    }
-
-    loadCSS('https://fonts.googleapis.com/css?family=Roboto:400,400italic,700');
-    loadCSS('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
-    loadCSS('https://fonts.googleapis.com/icon?family=Material+Icons');
-    loadCSS('https://fonts.googleapis.com/css?family=Bitter');
-
-    function goBack() {
-      window.history.back();
-    }
-  </script>
-  <script>
-    // Função para verificar a hora atual e ativar o checkbox após as 17
-    function checkCheckboxAfter17() {
-      var currentTime = new Date();
-      var hours = currentTime.getHours();
-      var minutes = currentTime.getMinutes();
-
-      // Exibir o checkbox Amanhã após as 17:00
-      if (hours >= 17) {
-        document.getElementById('tomorrowCheckboxContainer').style.display = ''; // Remover a linha que definia o display como block
-      }
-
-      // Verificar se o checkbox Amanhã está ativo
-      document.getElementById('tomorrowCheckbox').addEventListener('change', function () {
-        if (this.checked) {
-          document.getElementById('startTime').value = "00:00";
-          document.getElementById('endTime').value = "17:00";
-          document.getElementById('timeInputsContainer').style.display = 'none';
-        } else {
-          document.getElementById('startTime').value = "";
-          document.getElementById('endTime').value = "";
-          document.getElementById('timeInputsContainer').style.display = 'block';
-        }
-      });
-    }
-
-    // Função para preencher as opções de um select
-    function fillSelectOptions(selectElement, selectedValue) {
-      for (let i = 85; i <= 100; i++) {
-        let option = new Option(i + '%', i);
-        option.selected = i === selectedValue;
-        selectElement.appendChild(option);
-      }
-    }
-
-    // Carregar configurações quando o DOM estiver completamente carregado
-    document.addEventListener("DOMContentLoaded", function () {
-      var currentTime = new Date();
-      var startInput = document.getElementById("startTime");
-      var endInput = document.getElementById("endTime");
-
-      if (currentTime.getHours() >= 0 && currentTime.getHours() < 17) {
-        startInput.value = "00:00";
-        endInput.value = "17:00";
-      } else if (currentTime.getHours() >= 17) {
-        startInput.value = "18:00";
-        endInput.value = "23:40";
-      }
-
-      checkCheckboxAfter17(); // Chama a função para verificar a hora e adicionar o listener ao checkbox Amanhã
-
-      const select = document.getElementById('cbAtivo');
-      ASSETS.forEach(asset => {
-        const option = document.createElement('option');
-        option.value = asset.value;
-        option.textContent = asset.label;
-        if (asset.label.includes("⭐️")) {
-          option.selected = true;
-        }
-        select.appendChild(option);
-      });
-
-      $('.preload-container').hide(); // Esconde o preload-container ao carregar a página
-
-      fillSelectOptions(document.getElementById('selPercentageMin'), 90);
-      fillSelectOptions(document.getElementById('selPercentageMax'), 100);
-
-      let selectElementDays = document.getElementById('selDays');
-      for (let i = 1; i <= 50; i++) {
-        let optionDays = new Option(i + ' DIAS', i);
-        selectElementDays.appendChild(optionDays);
-      }
-      selectElementDays.value = '12'; // Define explicitamente o dia 12 como selecionado
-
-      loadSelections(); // Chama a função loadSelections
-    });
-
-    // Chamar a função checkCheckboxAfter17 assim que a página for carregada
-    window.onload = function () {
-      checkCheckboxAfter17(); // Chama a função para verificar a hora e adicionar o listener ao checkbox Amanhã
-    };
-
-    function saveSelections() {
-      const ativos = Array.from(document.getElementById('cbAtivo').selectedOptions).map(option => option.value);
-      const percentageMin = document.getElementById('selPercentageMin').value;
-      const percentageMax = document.getElementById('selPercentageMax').value;
-      const candleTime = document.getElementById('selCandleTime').value;
-      const days = document.getElementById('selDays').value;
-      const martingales = document.getElementById('selMartingales').value;
-      const orderType = document.getElementById('selOrderType').value;
-      const startTime = document.getElementById('startTime').value;
-      const endTime = document.getElementById('endTime').value;
-      const removeDuplicates = document.getElementById('removeDuplicatesCheckbox').checked;
-      const tomorrowCheckbox = document.getElementById('tomorrowCheckbox').checked;
-      const otcCheckbox = document.getElementById('otcCheckbox').checked;
-
-      let minuteFilter = [];
-      if (candleTime === 'M1') {
-        minuteFilter = Array.from(document.getElementById('selMinuteFilterM1').selectedOptions).map(option => option.value);
-      } else if (candleTime === 'M5') {
-        minuteFilter = Array.from(document.getElementById('selMinuteFilterM5').selectedOptions).map(option => option.value);
-      }
-
-      const selections = {
-        ativos,
-        percentageMin,
-        percentageMax,
-        candleTime,
-        days,
-        martingales,
-        orderType,
-        startTime,
-        endTime,
-        removeDuplicates,
-        tomorrowCheckbox,
-        otcCheckbox,
-        minuteFilter
-      };
-
-      localStorage.setItem('selections', JSON.stringify(selections));
-    }
-
-    function loadSelections() {
-      const savedSelections = JSON.parse(localStorage.getItem('selections'));
-
-      if (savedSelections) {
-        const { ativos, percentageMin, percentageMax, candleTime, days, martingales, orderType, startTime, endTime, removeDuplicates, tomorrowCheckbox, otcCheckbox, minuteFilter } = savedSelections;
-
-        const ativoSelect = document.getElementById('cbAtivo');
-        Array.from(ativoSelect.options).forEach(option => {
-          option.selected = ativos.includes(option.value);
-        });
-
-        document.getElementById('selPercentageMin').value = percentageMin;
-        document.getElementById('selPercentageMax').value = percentageMax;
-        document.getElementById('selCandleTime').value = candleTime;
-        document.getElementById('selDays').value = days;
-        document.getElementById('selMartingales').value = martingales;
-        document.getElementById('selOrderType').value = orderType;
-        document.getElementById('startTime').value = startTime;
-        document.getElementById('endTime').value = endTime;
-
-        // Carregar os estados dos checkboxes
-        document.getElementById('removeDuplicatesCheckbox').checked = removeDuplicates;
-        document.getElementById('tomorrowCheckbox').checked = tomorrowCheckbox;
-        document.getElementById('otcCheckbox').checked = otcCheckbox;
-
-        if (candleTime === 'M1') {
-          const minuteFilterSelect = document.getElementById('selMinuteFilterM1');
-          Array.from(minuteFilterSelect.options).forEach(option => {
-            option.selected = minuteFilter.includes(option.value);
-          });
-          document.getElementById('minuteFilterContainerM1').style.display = 'block';
-          document.getElementById('minuteFilterContainerM5').style.display = 'none';
-        } else if (candleTime === 'M5') {
-          const minuteFilterSelect = document.getElementById('selMinuteFilterM5');
-          Array.from(minuteFilterSelect.options).forEach(option => {
-            option.selected = minuteFilter.includes(option.value);
-          });
-          document.getElementById('minuteFilterContainerM5').style.display = 'block';
-          document.getElementById('minuteFilterContainerM1').style.display = 'none';
-        } else {
-          document.getElementById('minuteFilterContainerM1').style.display = 'none';
-          document.getElementById('minuteFilterContainerM5').style.display = 'none';
-        }
-      }
-    }
-
-
-    function updateMinuteFilterOptions() {
-      const candleTime = document.getElementById('selCandleTime').value;
-      if (candleTime === 'M5') {
-        document.getElementById('minuteFilterContainerM1').style.display = 'none';
-        document.getElementById('minuteFilterContainerM5').style.display = 'block';
-      } else if (candleTime === 'M1') {
-        document.getElementById('minuteFilterContainerM5').style.display = 'none';
-        document.getElementById('minuteFilterContainerM1').style.display = 'block';
-      } else {
-        document.getElementById('minuteFilterContainerM1').style.display = 'none';
-        document.getElementById('minuteFilterContainerM5').style.display = 'none';
-      }
-    }
-
-    // Carregue os timeframes no select.
-    document.addEventListener("DOMContentLoaded", function () {
-      const selectElement = document.getElementById('selCandleTime');
-      TIMEFRAME.forEach(timeframe => {
-        const option = document.createElement('option');
-        option.value = timeframe.value;
-        option.textContent = timeframe.label;
-        if (timeframe.selected) {
-          option.selected = true;
-        }
-        selectElement.appendChild(option);
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      // Verificar se é um dispositivo desktop
-      if (window.matchMedia("(min-width: 1024px)").matches) {
-        $(document).keydown(function (e) {
-          var tecla = e.keyCode || e.which;
-
-          // Bloquear F12
-          if (tecla == 123) {
-            e.preventDefault();
-            Swal.fire({
-              title: "Oops...",
-              icon: "error",
-            });
-          }
-
-          // Bloquear Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
-          if (e.ctrlKey && e.shiftKey && (tecla == 73 || tecla == 74 || tecla == 67)) {
-            e.preventDefault();
-            Swal.fire({
-              title: "Oops...",
-              icon: "error",
-            });
-          }
-
-          // Bloquear Ctrl+U
-          if (e.ctrlKey && tecla == 85) {
-            e.preventDefault();
-            Swal.fire({
-              title: "Oops...",
-              icon: "error",
-            });
-          }
-
-          // Bloquear Ctrl+S, Ctrl+H, Ctrl+A, Ctrl+E
-          if (e.ctrlKey && (tecla == 83 || tecla == 72 || tecla == 65 || tecla == 69)) {
-            e.preventDefault();
-            Swal.fire({
-              title: "Oops...",
-              icon: "error",
-            });
-          }
-        });
-
-        // Desabilitar o botão direito do mouse
-        $(document).on('contextmenu', function (e) {
-          e.preventDefault();
-          Swal.fire({
-            title: "Oops...",
-            icon: "error",
-          });
-        });
-
-        // Detectar uso de ferramentas de desenvolvedor
-        (function () {
-          const element = new Image();
-          Object.defineProperty(element, 'id', {
-            get: function () {
-              Swal.fire({
-                title: "Oops...",
-                icon: "error",
-              });
-              throw new Error('⛔️');
-            }
-          });
-          console.log(element);
-        })();
-
-        // Verificar se o DevTools está aberto
-        const devtools = {
-          open: false,
-          orientation: null
-        };
-
-        const threshold = 160;
-
-        const emitEvent = (status, orientation) => {
-          window.dispatchEvent(new CustomEvent('devtoolschange', {
-            detail: {
-              open: status,
-              orientation: orientation
-            }
-          }));
-        };
-
-        const main = ({ emitEvents = true } = {}) => {
-          const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-          const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-          const orientation = widthThreshold ? 'vertical' : 'horizontal';
-
-          if (
-            !(heightThreshold && widthThreshold) &&
-            ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold)
-          ) {
-            if ((!devtools.open || devtools.orientation !== orientation) && emitEvents) {
-              emitEvent(true, orientation);
-            }
-            devtools.open = true;
-            devtools.orientation = orientation;
-          } else {
-            if (devtools.open && emitEvents) {
-              emitEvent(false, null);
-            }
-            devtools.open = false;
-            devtools.orientation = null;
-          }
-        };
-
-        main({ emitEvents: false });
-        setInterval(main, 500);
-
-        window.addEventListener('devtoolschange', event => {
-          if (event.detail.open) {
-            Swal.fire({
-              title: "Oops...",
-              icon: "error",
-            });
-          }
-        });
-
-        // Adicional: remover o listener ao deixar a página
-        window.addEventListener('beforeunload', function () {
-          $(document).off('keydown');
-          $(document).off('contextmenu');
-        });
-      }
-    });
-  </script>
-  <script>var _0x4bd045=_0x56f2;function _0x56f2(e,n){var t=_0x518b();return(_0x56f2=function(e,n){return t[e-=268]})(e,n)}!function(e,n){for(var t=_0x56f2,d=_0x518b();;)try{if(468973===-parseInt(t(560))/1*(parseInt(t(536))/2)+parseInt(t(1231))/3+-parseInt(t(1083))/4*(-parseInt(t(812))/5)+parseInt(t(544))/6*(parseInt(t(1054))/7)+parseInt(t(474))/8*(parseInt(t(1236))/9)+parseInt(t(619))/10*(-parseInt(t(332))/11)+parseInt(t(510))/12*(-parseInt(t(1244))/13))break;d.push(d.shift())}catch(e){d.push(d.shift())}}();const TIMEFRAME=[{value:"M3",label:"M1"},{value:"M4",label:_0x4bd045(1390)},{value:"M5",label:"M5",selected:!0},{value:_0x4bd045(1459),label:_0x4bd045(1459)},{value:_0x4bd045(1204),label:_0x4bd045(1204)},{value:"H1",label:"H1"}],ASSETS=[{value:_0x4bd045(539),label:_0x4bd045(361)},{value:_0x4bd045(931),label:_0x4bd045(1052)},{value:_0x4bd045(683),label:_0x4bd045(590)},{value:_0x4bd045(1324),label:_0x4bd045(476)},{value:_0x4bd045(1151),label:_0x4bd045(1181)},{value:_0x4bd045(1326),label:_0x4bd045(1019)},{value:_0x4bd045(1455),label:_0x4bd045(638)},{value:_0x4bd045(484),label:_0x4bd045(1269)},{value:_0x4bd045(1460),label:_0x4bd045(1027)},{value:_0x4bd045(1002),label:_0x4bd045(1043)},{value:_0x4bd045(1271),label:_0x4bd045(342)},{value:_0x4bd045(400),label:_0x4bd045(639)},{value:_0x4bd045(985),label:_0x4bd045(540)},{value:_0x4bd045(316),label:_0x4bd045(743)},{value:_0x4bd045(561),label:_0x4bd045(761)},{value:_0x4bd045(795),label:_0x4bd045(1397)},{value:_0x4bd045(1355),label:_0x4bd045(970)},{value:_0x4bd045(802),label:_0x4bd045(1170)},{value:_0x4bd045(1474),label:_0x4bd045(1356)},{value:_0x4bd045(594),label:_0x4bd045(1248)},{value:_0x4bd045(1199),label:_0x4bd045(939)},{value:_0x4bd045(1319),label:_0x4bd045(978)},{value:_0x4bd045(553),label:_0x4bd045(908)},{value:_0x4bd045(1357),label:_0x4bd045(1429)},{value:_0x4bd045(1256),label:_0x4bd045(592)},{value:_0x4bd045(857),label:_0x4bd045(432)},{value:_0x4bd045(1038),label:_0x4bd045(1365)},{value:_0x4bd045(533),label:_0x4bd045(633)},{value:_0x4bd045(672),label:_0x4bd045(676)},{value:_0x4bd045(749),label:_0x4bd045(373)},{value:_0x4bd045(346),label:_0x4bd045(1188)},{value:_0x4bd045(454),label:_0x4bd045(1334)},{value:_0x4bd045(338),label:_0x4bd045(1471)},{value:_0x4bd045(986),label:_0x4bd045(1343)},{value:_0x4bd045(885),label:_0x4bd045(1064)},{value:_0x4bd045(883),label:_0x4bd045(1117)},{value:_0x4bd045(399),label:_0x4bd045(410)},{value:_0x4bd045(794),label:_0x4bd045(498)},{value:_0x4bd045(520),label:_0x4bd045(1312)},{value:_0x4bd045(845),label:_0x4bd045(817)},{value:_0x4bd045(752),label:_0x4bd045(1171)},{value:_0x4bd045(1378),label:_0x4bd045(1191)},{value:_0x4bd045(1037),label:_0x4bd045(706)},{value:_0x4bd045(1130),label:_0x4bd045(757)},{value:_0x4bd045(1206),label:_0x4bd045(1213)},{value:_0x4bd045(1246),label:_0x4bd045(351)},{value:_0x4bd045(922),label:_0x4bd045(395)},{value:_0x4bd045(691),label:_0x4bd045(1047)},{value:_0x4bd045(1114),label:_0x4bd045(352)+_0x4bd045(415)},{value:_0x4bd045(767),label:_0x4bd045(670)+_0x4bd045(480)},{value:_0x4bd045(1454),label:_0x4bd045(615)+_0x4bd045(777)},{value:_0x4bd045(684),label:_0x4bd045(1335)+_0x4bd045(537)}];let percentageMin,percentageMax,candleTime,daysAnalyse,martingales,orderType,timeInit,timeEnd,listBestPairTimes=[],requestNumber=0;function getHistoric(){var e=_0x4bd045,n={XjEOy:function(e,n){return e(n)},Exapw:e(452),TlFou:e(1373),qaoxN:e(603),dgGmZ:function(e){return e()},hVnpG:e(925),EPguZ:function(e,n){return e===n},LZegR:function(e,n){return e(n)},TXrTk:e(545)+e(1311)+e(1362)+e(664)+e(1013)+e(1323),bAlMZ:function(e,n,t){return e(n,t)},uLWNs:function(e,n){return e>n},JYpvg:e(1168)+e(489)+e(1026)+"o."};n[e(680)]($,n[e(386)])[e(324)](n[e(1351)],n[e(1073)]),listBestPairTimes=[],n[e(543)](getParameter);const t=n[e(680)]($,n[e(673)])[e(847)]();if(!t||n[e(1197)](t[e(632)],0))return n[e(292)](alert,n[e(275)]),void n[e(1162)](setTimeout,(()=>{location[e(649)]()}),2e3);requestNumber=t[e(632)];const d=n[e(543)](CalculateCountCandles);n[e(1329)](d,5e4)?n[e(292)](alert,n[e(381)]):t[e(1300)]((e=>callHistoricData(e,d)))}function getParameter(){for(var e=_0x4bd045,n={fZbnd:e(1316)+e(751),OLWXH:function(e,n){return e(n)},xebWV:e(1107)+e(920),NIWnm:e(725),RuaTW:e(1107)+e(1143),OIEZs:function(e,n){return e(n)},vYXkm:e(925),SGPsT:e(439)+e(972),SWEzg:function(e,n){return e(n)},UzrBi:e(886)+"it",pLnkk:function(e,n){return e(n)},FWgvW:e(1225)+"d",zcvae:e(1118)+e(302),Dtxir:function(e,n){return e(n)},eXrzt:e(1187)+e(634)},t=n[e(665)][e(655)]("|"),d=0;;){switch(t[d++]){case"0":percentageMin=n[e(1164)]($,n[e(631)])[e(847)]();continue;case"1":daysAnalyse=n[e(1164)]($,n[e(503)])[e(847)]();continue;case"2":percentageMax=n[e(1164)]($,n[e(1345)])[e(847)]();continue;case"3":cbAtivo=n[e(424)]($,n[e(1367)])[e(847)]();continue;case"4":orderType=n[e(1164)]($,n[e(487)])[e(847)]();continue;case"5":timeInit=n[e(654)]($,n[e(1418)])[e(847)]();continue;case"6":timeEnd=n[e(1458)]($,n[e(1051)])[e(847)]();continue;case"7":martingales=n[e(654)]($,n[e(1203)])[e(847)]();continue;case"8":candleTime=n[e(1385)]($,n[e(814)])[e(847)]();continue}break}}function CalculateCountCandles(){var e=_0x4bd045,n={CxAIU:function(e,n){return e*n},gUoqO:function(e,n){return e/n}};const t={M2:2,M10:10,M15:15,M30:30,H1:60,H2:120,H4:240}[candleTime]||15,d=n[e(1276)](n[e(635)](60,t),24);return n[e(1276)](d,daysAnalyse)}function callHistoricData(e,n){var t=_0x4bd045,d={mAKvb:function(e,n){return e(n)},rdqSo:t(746)+t(1396)+t(330)+t(1139)+t(578)+t(737)+t(821)+"19",dFeHD:t(1388)};const r=t(359)+t(517)+t(1463)+t(1223)+t(646)+e+(t(666)+t(505)+"=")+candleTime+t(748)+n;$[t(1468)]({url:r,headers:{Authorization:d[t(1070)]},type:d[t(870)],success:function(e){d[t(927)](CalculateHistoric,e)},error:function(e){d[t(927)](ErrorHistoric,e)}})}function CalculateHistoric(e){for(var n=_0x4bd045,t={Qiflh:function(e,n){return e<n},GPwyw:function(e,n){return e-n},LTeej:function(e,n){return e(n)},FiRei:function(e,n){return e(n)},LyGBc:function(e,n){return e/n},dZZwe:function(e,n){return e*n},tNGuw:function(e,n){return e===n},dOQKo:function(e,n){return e(n)},BohhV:function(e,n){return e>n},mVfnp:function(e,n){return e(n)},fqFVx:function(e,n){return e(n)},EAFYV:function(e,n){return e<n},DienZ:function(e,n,t){return e(n,t)},gmqQg:function(e,n){return e===n},VvJqU:function(e,n){return e(n)},TOSVi:function(e,n){return e<n},OTmQD:function(e,n){return e==n},TCExf:function(e,n){return e/n},pSXXM:function(e,n){return e>=n},dapLS:function(e,n){return e<=n},uJiTS:function(e,n){return e==n},UcenS:function(e){return e()}},d=e[n(565)],r=[],a=0;t[n(1228)](a,d[n(632)]);a++){var o=d[a],b=new Object;b[n(527)+"e"]=t[n(1048)](o[n(1060)].o,o[n(1060)].c),b[n(1028)]=t[n(1169)](ConvertDate,o[n(971)]),b[n(325)]=t[n(705)](GetStringResult,b[n(527)+"e"]),b[n(541)]=t[n(441)](t[n(879)](b[n(527)+"e"],100),o[n(1060)].o),t[n(1133)](b[n(325)],orderType)?b[n(713)]=!0:b[n(713)]=!1;var i=b[n(1028)][n(971)][n(655)](":");t[n(1228)](t[n(1169)](parseInt,i[0]),t[n(423)](parseInt,timeInit))||t[n(443)](t[n(1131)](parseInt,i[0]),t[n(1380)](parseInt,timeEnd))||r[n(1275)](b)}var x=r;if(t[n(443)](martingales,0)){x=[];for(a=0;t[n(1457)](a,r[n(632)]);a++){(o=r[a])[n(1202)+"s"]=t[n(1413)](GetNextMartingales,r,a),o[n(713)]=!t[n(1004)](o[n(713)],!1)||t[n(1086)](GetMartingaleResult,o),x[n(1275)](o)}}var c=Array[n(1008)](new Set(x[n(897)]((e=>e[n(1028)][n(971)]))))[n(897)]((t=>{var d=n;return{time:t,candles:x[d(516)]((e=>e[d(1028)][d(971)]===t)),pair:e[d(828)]}}));for(a=0;t[n(1228)](a,c[n(632)]);a++){var u=c[a];u[n(291)]=0,u[n(1018)+n(738)]=0;for(var _=0;t[n(769)](_,u[n(565)][n(632)]);_++){o=u[n(565)][_];t[n(421)](o[n(713)],!0)&&(u[n(291)]++,u[n(1018)+n(738)]+=b[n(541)])}u[n(1018)+n(738)]=t[n(441)](u[n(1018)+n(738)],u[n(291)]),u[n(291)]=t[n(598)](t[n(879)](u[n(291)],100),u[n(565)][n(632)]),t[n(1267)](u[n(291)],percentageMin)&&t[n(1337)](u[n(291)],percentageMax)&&listBestPairTimes[n(1275)](u)}requestNumber--,t[n(499)](requestNumber,0)&&t[n(1242)](DownloadTxt)}function CheckTime(){return!0}function GetMartingaleResult(e){var n=_0x4bd045,t={wwxFL:function(e,n){return e!=n},pcBFl:function(e,n){return e!=n},OCpbz:function(e,n){return e>n}},d=e[n(1202)+"s"][n(500)]((e=>!0===e[n(713)]));return!(!t[n(1023)](d,void 0)||!t[n(1382)](d,t[n(1123)](null,0)))}function _0x518b(){var e=["डुप्लिकेट ","14hBxdeE","values",".progress","language","BrrPi",":scope > d","mid","/8_pt/728_","ackground-","ct-dropdow","USD/PLN","ns='http:/","दिशा:","YtVWW","r='endTime","उफ़, सूची ","rdqSo","666;\n    }","yBDik","qaoxN","सूची का अं","true","direction","ceeqO","value","icatesChec","t_dropdown","ালিকা। \n\nব","JKGro","332OCZEoj","EURNOK","dgFYM","VvJqU","আগামীকালের","fjIzx","QKEEO","cJiBh","toUpperCas","15rem","' viewBox="," 100;\n    ","RxfHt","put{\n    h","    .multi","jQHAR","qocEt","TTnPe","EeJip","none","Catalogado","SGDJPY","er{\n    ma","DvxNF","#selPercen","/11_pt/728","nxBVb","Porcentage","right .75r","CZUIC","t-hide-x","USD_THB","রু:","90.jpg","USD/SEK","#selMartin","দিক:","ve;\n    ba","sclRu","DpxkB","OCpbz","    }\n\n   ","execComman","bar-contai","voqHa","ZZQUQ","कर्स","EUR_PLN","mVfnp","मार्टिंगेल","tNGuw","JRbEC","    paddin","tiple]"," mañana","em center;","32f191f03-","uyUpO","sRuXl","nirpY","tageMax","USDSGD","Fin de la ","Inicio de ","ান পরিসীমা","EnrUC","oxContaine","kVlEm","AUD_USD","sByClassNa","zeHIu","hide","ckground-i","UmtTu"," .multisel","padding:2p","/9_id/728_","nqPyf","ZBtTk","bAlMZ","SclnY","OLWXH","order-radi","Porcentaje","x.io/files","Limite de ","LTeej","GBP/CAD","USD/BRL","myText","CZQgm","चुनें","piKUb","margin: 0 ","GqTrZ","gEAUJ","AQBrR","রুন","AUD/USD ⭐️","Timeframe:","r='selPerc","Remove min","0' stroke-","coywB","#selCandle","USD/HUF","mpUZg","OBYRF","USD/DZD","ilterM5","LXeEW","VKNTK","awUIz","round-repe","EPguZ","qqbAm","GBP_NZD","   backgro","\nTotal:  ","nextCandle","zcvae","M30","r de Señal","EUR_ZAR","समय निकाले","ptjSm","11|14|7|12","M1 (Rango ","Multiselec","me']","USD/INR","EURCZK","essage","uEgRZ","OckNr","rsloc","or-sinais","sition: ab","r de Sinai"," Corretora","om/v3/inst","EgDhU","#selTimeEn","orarios du","demoj","Qiflh","  top:0;\n ","px;\n    he","364893TNLNlT","nextSiblin","bcvHg","days","100%","9nJTZJo","ta:","/6_en/728_","maxselecte","kit-scroll","ptdel {\n  ","UcenS","oAjzy","3907657fZaiBg","lEQJX","GBP_SGD","TAJHi","GBP/JPY ⭐️"," analysis ","listitemEl","8|0|7|1|3|","pair","omorrow","rTkjq","wn-list-wr","NZD_JPY","USDPLN","days or in","er-radius:","shkSU","keys","Início da ","/10_en/728","hWJFW","tom:5px;\n ","oqQRG","pSXXM","getMinutes","CHF/JPY","NBbRA","EUR_CHF","FFugP","নের সংখ্যা","Range)","push","CxAIU","iv:not(.mu","padding","ওটিসি তালি","USDDZD","title","rollbar-th","endTime","CFXyw","ilterM1","rMdom","BKdjB","CRYIDX","https://st","RpklV","overflow","एम 1 (मुख्","MSoSJ","jJOxz","गया","bbGZg","/19_id/728","r{\n    col","zQkti","forEach","options","on: relati","xt, .multi","List for t","তালিকার শু","loadOption","src","sinais.com","ckboxConta",".placehold","lect an as","USD/COP","CohoP","Eliminar h","lykrF","0|2|8|1|7|","margin-bot","div","GBP_USD",": 4px;\n   ","&nbsp;","AkUGC","tivo.","AUD_NZD","\nsiofiltro","CAD_CHF","px;\n    fo","to;\n    ov","uLWNs","/10_id/728","-selector)","MDDRf","nt-size: 0","USD/JPY ⭐️","XAU/USD (G","ieFFg","dapLS","DRAW","ontainer","stener","2|0|1|3|4","Todos","USD/NOK","ner","RuaTW","XRTVc","cMNhT","#tomorrowC"," dias de a","parentNode","TlFou","gvFhD","OxNDA","\n    backg","GBP_AUD","GBP/CHF","NZD_CHF","YgVge","ओटीसी सूची","HHJpD","wyQAf","set. | Pre","crease the","kbox","USD/ARS","aqSDR","vYXkm","2|5|4|1|0|","default","txtSelecte","BzcZP",".content","cursor","Ups, Lista","YjvxC","न्यूनतम प्","vGhTR","EUR_CZK","appendChil","fqFVx","KgQOg","pcBFl","x;\n    bor","दिन:","Dtxir","IsaJq","মুছে ফেলুন","GET","m mínima:","M1+","onclick","NVoRG","optext",".form-grou","Maximum Pe","326208921b","EUR/USD ⭐️","fORto","textConten","then","imbNb","M2 5l6 6 6","iselect-dr","USDINR","fadeOut","   padding","lEWNB",";\n    padd","entageMin'","closes","s días de ","attributes","DienZ","Lista para","jlWxQ","ওহ, খালি ত","JSJpj","UzrBi","RTVxO","के दिनों क","mlNrU","wmAJl","dropdown-a","HTrXw","चयनित","mAKrG","rgin-right","tor","NZD/CHF","análisis o","removeChil"," \n    }\n  ","OTC List","GBPZAR","sort","✅ All Brok",".multisele","ybRJu","x;\n    wid","Kuaqw","vBfmG","select[mul","Direction:","setAttribu","UVQaw","VInow","heckboxCon","width","মার্টিংল:","ultiselect","click","eypRe","optdel","BTC_USD","CAD_JPY","alo Maior)","EAFYV","pLnkk","M15","EUR_AUD","innerText","lay","ce.oanda.c",".preload-c","qktNA","Start of t","কপি করা হয","ajax","iuzRl","aceholder","USD/MXN","t-max-item","BbrKT","GBP_CHF","yCVUu","खाली है। \n","myModal","%3csvg xml","'%3e%3cpat","Remover ho","v{\n    pad","TXrTk","multiselec","rapper{\n  "," \n    bord","placeholde","/10_pt/728","সময়কাল:","अधिकतम प्र","elect-drop","RMYav","eat;\n    b","wn-list di","utFsK","  color: #","listaVazia","NQzvJ","winrate","LZegR","or:#ced4da","Ativo:","brKVr","EURPLN","ding: 5px;","|2|13|16|5","round-size","ltiselect-","r label","gales","KIAaw","THvJH","lect-dropd","_90.png","-6px 1px 5","M1 (Major ","ttjlS","-list","gmdxv","background","VcjkO","r='ativos'","FSsDy","EUR_NZD","dNYRL","PUT","WaLcP","uLuEn","image-disp","sDTXz","add","css","result","সর্বোচ্চ শ","jtMtV","GdiIj"," बढ़ाएं।","413a877288","klTWT","884576ICumrB",".optext .o","Selecionad","Xzbhr","inutos:","r='selDays","USD_MXN","ABolW","sxuQc","-list-wrap","EUR/CHF","-search","nd-color: ",":0.5em; \n ","USD_HUF","Remover mi","✅ সমস্ত ব্","Copiado","AUDSGD","USD/PHP","CRYIDX (Cr","HgbTU","ent","়েছে","y list. \n\n","checkbox",":scope div","https://ap","eqsCj","AUD/CAD ⭐️",".7em;\n    ","GYUDX","  .multise","ock;\n    p","txtSearch","thJEw","XjUHl","removeMinu","USDBRL","म करें या "," cursor: p","USD/CZK","selected","KjQAh","Martingale","xbIgE","vvIAC","/14_pt/728","addEventLi","JYpvg","-dropdown-","FTEdX","class","target","Exapw","l martinga","zFwWj","-6'/%3e%3c","wdzzY","WbzBi","pdown span","margin: -1","✅ सभी ब्रो","USD/PKR","Selecionar","brbbj","KYgRo","USD_TRY","EUR_GBP","wLKnx","✅ Todas la"," span.opte","xtMiH","paeCf","rflow-y:au","show","AUDHKD","s Corredor","USD/TRY","KDedo","own-list-w","OQMzV","Dias:","ypto IDX)"," 4px; \n   ","torAll","QYiWn","OdzqG","tes","OTmQD","px;\n    po","dOQKo","OIEZs","txtRemove"," list:","t: 0;\n    ","wSwGP","input","RSNbI","  float: r","NZD/USD ⭐️","ी संख्या क","g: .375rem"," {width:10","sBmIv","text","ajwCc","#selOrderT","রোকার","LyGBc","✅ Todas as","BohhV","QLauP","শতাংশ:","Fczoi","bottom:2px"," display:i","SwQfc","nMVYo","optEl","body","gSwgT","USD_JPY","ound' stro","dispatchEv","utes:","jDjiP","MgvKu","oLwUi","KyNZt","ddTDB","USDNGN","success","Activo:","cLDAv"," aumente e","margin-top","erflow-x: ","তালিকার শে","createElem","aloger","t-select-a","5948456XIiAhv","fire","AUD/NZD","_90.jpg","LsAUk","AlqWw","thereum)","Copied","dQOwX","cation","CHF_JPY","Días:",":1px 0.75e","SGPsT","refresh","50.000 vel","jIqco","SyQLb","nutos:","Carregando","All","select-dro","ynogV","-list{\n   ","USD/ZAR","uJiTS","find","wcyea","BBaXl","NIWnm","ktjtn","ranularity"," display: "," padding:2","m;\n    ove","\n    }\n   ","48JlhFvW","Igyez","contains","Selecciona","bZehS","समय-सीमा:","filter","i-fxpracti","listEl","uQHWJ","AUD_HKD","yLKsC","body, html","Dirección:","Rbmre","checked","minPercent","resultValu","apper .mul","ें:","load","Oops, Empt","कल के लिए ","USD_CAD","age","g/2000/svg","3412MjDdGC","old)","कॉपी किया ","AUD_CAD","EUR/JPY ⭐️","percentDif","arch{\n    ","dgGmZ","1498062LUHLBD","Need to se","Lista OTC","lista:","hidden;\n  ","nálise ou "," তালিকা","otc","PxeeY","NZD_CAD","सूची की शु","OoHRX","Signal Cat","ctumI","5px;\n    b","ById","155DmLmnE","EUR_SGD","dEQjL","pQJFC","CALL","candles","Xpmug","|15","erM1 label","mayor)","/18_id/728","VImcA","display","PkACx","UZAPp","martingale",".progress-"," #212121;\n","d9be68b748","'0 0 16 16","AGUARDE","M1 (Interv","Remove dup","style","EKzQK","EURJPY","|1|3|6|0|8","Minimum Pe","0%;}\n    ","eSIuH","AUD/JPY","h fill='no","NZD/JPY","own span.m","GBP_JPY","span","EivRz","selectedOp","TCExf","PyeUX","ZwFnd","सिग्नल कैट","remove","progress","सभी","oCuXD"," máximo:","#otcCheckb","সমান সময় ","getHours"," number of","th='2' d='","xDudG","ifMaT","QFfpG","BTC/USD (B","OHXsy","-color: #b","label","10KZneBv","jIYEs",": 16px 12p","ার্টিংলে ব","nWJWe","ropdown-se","otcCheckbo","XTlZk","itlebroker","PnFcl","ooMjz","মিনিট সরান","xebWV","length","USD/CAD","Time","gUoqO","-all-selec","एसेट:","CAD/JPY","EUR/GBP ⭐️","der-radius","optext{\n  ","riKPY","रतिशत:","End of the",'/svg%3e");',"ruments/","USDEGP","CfDcV","reload","तिशत:","pPSvB","percentage"," mínimo:","SWEzg","split",";\n    }\n  ","yFbaF","Reduzca lo","Fim da lis","axselected",":not(.mult","#removeDup","RtguT","cisa selec","fZbnd","/candles?g","/www.w3.or","ajtxJ","OQFcj","ETH/USD (E","he list:","USD_CHF","hVnpG","dPNfX","UeLvN","USD/CHF ⭐️"," inline-bl",": 2px;\n   ","CfQyG","XjEOy","DICZA","ing:1px 0;","AUD_JPY","XAU_USD","iACnZ","MGCLa","USDBDT","dius:3px;\n","qhyxl","UKjGe","USD_SGD","per","opdown-all","m; \n    }\n","   }\n    .","optdel:hov","YXCCo","qeAKm","th: 100%;\n","LirvY","এম 1 (প্রধ","DPbrR","qMGXr","QvdDP","FiRei","USD/EGP","down span.","uhTgO","Martingala","ation","   .multis","solute;\n  ","win","-webkit-sc","block","QvnME","USDPHP",'"data:imag',"/16_pt/728","#334355;\n ","_styles","Ops, Lista","tDropdownO","ryHGI","#selDays","aumente o ","m máxima:","সিগন্যাল ক","/7_en/728_","xqPwi","lRYgw","DOMContent","  display:","  }\n    .m","XfLHe","n='round' ","84f7d3107b","kDif","leECK","Iudui","pGNVi","/catalogad","EUR/NZD","hwgne"," vazia. \n\n","Bearer eb2","head","&count=","USD_CZK","    positi","4|5|6|3","AUD_SGD",".titlebrok","dgaPL","vyKki","FenYO","USD/IDR","startTime","Marco de t","zZiWI","EUR/SGD","padStart","querySelec","eight: 1.1","getElement","/15_pt/728","ETH_USD","SUDNR","TOSVi","qHsbK","OetJM","সম্পত্তি:","slow","ne' stroke","EURZAR","innerHTML","itcoin)","search","isArray","3|6|2|5|7|","FTAPm"," vacía. \n\n","licate tim","SKVKn","tions","लॉगर",".closes","llCQW","6|7|3","toggle","   left: 0","Select","r='startTi","USD_ZAR","EUR_USD","TMgRz","ec4ca;\n   ","n.optext .","নির্বাচিত","le.","concat","GBP_CAD","USDIDR","নির্বাচন ক","nKBjL","la lista:","bar {\n    ","pt-br",".loading-m","includes","5|1|0|3|2|","39255AQJacw","bcUaq","eXrzt","...",": #212121;","USD/BDT","stopPropag",": 0.35em; ","own-list::","9f05ca3053","\n    .mult","Eliminar m","मिनट निकाल","bGmoh","Selected","  z-index:","instrument"," border-ra","ointer;\n  ","Loaded","vgyrI","lKEdF","FnzNm","em;\n    ma","DMATi","='%23343a4","USDARS","wQsYa","snGwQ","change","#minuteFil","mHNFZ","IqiQV","EUR_CNH","BcpXy","val","subtitle","flex","p label[fo","ynxBZ","iempo:","দিন:","bYmZq","focus","bsZjt","NZD_USD","opdown spa","txtAll","JoxNG","ptions","toString","Wnqyk","sLOYw","YhGWi","Gales:","5|2|6|4","idth: 1.15","licados","dFeHD","er { color","|10|17|9|4","Days:","searchInpu","ZjCmo","USDTHB","सूची","dWqgI","dZZwe","lmNnn","aMskz","WtqoU","USD_SEK","mage: url(","USD_PLN","#selTimeIn","তাংশ:","iner label","FJfqJ","Diminua os","PNTPC","gUOhz","ll-selecto","ers","tiselect-d","সর্বনিম্ন ","map","selMinuteF","ect-dropdo","sjvZN","tomorrow","oVkqu","5em;\n    w","classList","Direção:","atic.quote","SviNY","NZD/CAD","insertBefo","none;\n    ","ftaRo","terContain","position: ","-OTC","stroke-wid","e/svg+xml,","OUMyz","\nविश्लेषण ","य सीमा)","tageMin","0|1|4","GBP_ZAR","mKEoX","Nfgyt","#cbAtivo","িশ্লেষণ দি","mAKvb","adding: 2p","zbZSs","maxPercent","AUD_CHF",".m1",".subtitlet","iNrYp","   margin-","/17_id/728","plicados","EURCNH","GBP/NZD","x 5px 0px ","ThvFZ","buttonX","GBPSGD","removeDupl","k;\n    }\n ","sBQcY","us: 5px;\n ","QXouI","ZUTgW","select","linecap='r","error","YPmVF","XNLoR","und-color:","NNJNh","tLRnw","DGIaP","nline-bloc","copy","chooseAsse","ight;\n    ","GERAR LIST","jDTzo","height","JSzYh",": #c66;}\n ","  backgrou","JmqOV","GBP/AUD ⭐️","time","ype","UnNnA","erM5 label"," .75rem;\n ","srcOption"," কমান বা ম","GBP/USD ⭐️","kDIep","্যাটালগার","t, span.pl","ke-linejoi",";\n    righ"," martingal","EUR_JPY","USD_NOK","opdown{\n  ","tlBRy","AiIHL","tainer lab","qqmMf","zWLcY","EURJPY-OTC","replace","form-contr","QEOuU","pxMWr","CqCOt","ৃদ্ধি করুন","auto","btXMq","EUR_CAD","Asset:","gmqQg","GRkZI","stLVw","qXyup","from","Reduce the","t-dropdown","at: no-rep","रुआत:","ionar um a","XPAbP","SUfey","entageMax'","USDPKR","averageTic","CAD/CHF","ight: 15re","width: 6px","SCrfm","wwxFL","umb {\n    ","cDCaI","as excedid","EUR/AUD ⭐️","date","Remove","rários dup","OCGpr","copyNotifi","wn-list in","licatesChe","AgeYQ","t-search","EUR_NOK","SGD_JPY","span.optex","FRKUT","timeframe","QnSFy","EUR/CAD","aXekC"," amanhã","rcentage:","USD/NGN","GPwyw","USDCOP","list::-web","FWgvW","AUD/CHF"];return(_0x518b=function(){return e})()}function GetNextMartingales(e,n){var t=_0x4bd045,d={zQkti:function(e,n){return e>n},awUIz:function(e,n){return e<n},ieFFg:function(e,n){return e+n},XRTVc:function(e,n){return e(n)},Xpmug:function(e,n){return e(n)},JoxNG:function(e,n){return e<=n}},r=[];if(d[t(1299)](martingales,0)&&d[t(1195)](d[t(1336)](d[t(1346)](parseInt,n),d[t(566)](parseInt,martingales)),e[t(632)])){for(var a=1;d[t(860)](a,martingales);a++){var o=e[d[t(1336)](n,a)];r[t(1275)](o)}return r}return r}function DownloadTxt(){var e=_0x4bd045,n={ynogV:function(e,n){return e<=n},RMYav:e(289),QvnME:e(952),EKzQK:e(758),ZwFnd:e(1283),NNJNh:function(e,n){return e===n},lEWNB:e(898)+e(1285),aqSDR:e(898)+e(1192),YjvxC:e(625)+"x",ZBtTk:e(944)+e(1079)+e(1364),DvxNF:function(e,n,t){return e(n,t)},XPAbP:function(e,n){return e<n},UKjGe:function(e,n){return e!==n},AlqWw:function(e,n){return e<n},jJOxz:function(e,n){return e>n},snGwQ:function(e,n){return e+n},PkACx:function(e,n){return e===n},bcUaq:e(408),RxfHt:e(1049),MGCLa:function(e,n){return e===n},KYgRo:e(938),pGNVi:e(687),CZUIC:e(350),BcpXy:e(370),SKVKn:function(e,n){return e===n},FRKUT:e(1214),kVlEm:e(1280),zZiWI:e(1084),dQOwX:e(647),FSsDy:function(e,n){return e===n},rMdom:e(296),HHJpD:e(803),DMATi:e(775),LsAUk:e(1404),dNYRL:function(e,n){return e===n},Igyez:e(1257),bZehS:e(943),Wnqyk:e(717),WtqoU:e(1434),nqPyf:e(1017),FenYO:e(1104),XjUHl:e(838),dPNfX:e(1144),RpklV:e(463),lRYgw:function(e,n){return e===n},bsZjt:e(876),OCGpr:e(1288),eSIuH:e(914),DICZA:function(e,n){return e+n},CqCOt:function(e,n){return e+n},DGIaP:e(1201),btXMq:e(1325)+e(1308)+e(742)+e(1219),gvFhD:function(e,n){return e(n)}};if(n[e(496)](listBestPairTimes[e(632)],0))return void Swal[e(475)]({title:translations[currentLang][n[e(284)]],icon:n[e(716)]});var t=document[e(765)+e(559)](n[e(584)])[e(1078)],d=document[e(765)+e(559)](n[e(600)])[e(1078)];let r=[];n[e(956)](candleTime,"M1")?r=Array[e(1008)](document[e(765)+e(559)](n[e(1407)])[e(597)+e(785)])[e(897)]((n=>n[e(1078)])):n[e(956)](candleTime,"M5")&&(r=Array[e(1008)](document[e(765)+e(559)](n[e(1366)])[e(597)+e(785)])[e(897)]((n=>n[e(1078)]))),listBestPairTimes[e(1435)](((n,t)=>n[e(971)]>t[e(971)]?1:-1));var a="",o=0;(n[e(956)](candleTime,"M4")||n[e(956)](candleTime,"M3"))&&(candleTime="M1");var b=document[e(765)+e(559)](n[e(1375)])[e(525)];document[e(765)+e(559)](n[e(1161)])[e(525)]&&(listBestPairTimes=n[e(1106)](filterDuplicateSignals,listBestPairTimes,b));for(var i=0;n[e(1014)](i,listBestPairTimes[e(632)]);i++){var x=listBestPairTimes[i];if(!n[e(690)](t,"")||!n[e(690)](d,"")||!n[e(479)](x[e(971)],t)&&!n[e(1294)](x[e(971)],d)){var c=x[e(971)][e(655)](":")[1];if(!r[e(810)](c)){a+=n[e(840)](candleTime,";");var u=x[e(1252)][e(994)]("_","");n[e(573)](u,n[e(813)])?u=n[e(1095)]:n[e(686)](u,n[e(398)])?u=n[e(741)]:n[e(573)](u,n[e(1112)])?u=n[e(846)]:n[e(784)](u,n[e(1040)])?u=n[e(1150)]:n[e(956)](u,n[e(760)])?u=n[e(482)]:n[e(315)](u,n[e(1286)])?u=n[e(1360)]:n[e(784)](u,n[e(836)])?u=n[e(478)]:n[e(317)](u,n[e(511)])?u=n[e(1360)]:n[e(573)](u,n[e(514)])?u=n[e(863)]:n[e(317)](u,n[e(882)])?u=n[e(1160)]:n[e(956)](u,n[e(756)])?u=n[e(368)]:n[e(315)](u,n[e(674)])?u=n[e(1290)]:n[e(731)](u,n[e(856)])&&(u=n[e(1031)]),b&&(u+=n[e(589)]),a+=n[e(681)](u,";"),a+=n[e(998)](x[e(971)],";"),a+=orderType,a+="\n",o++}}}a+=n[e(998)](n[e(958)],o),a+=n[e(1001)],n[e(1352)](download,a)}function filterDuplicateSignals(e,n){var t=_0x4bd045,d={fORto:function(e,n){return e===n},ZjCmo:t(993),vBfmG:function(e,n){return e===n},cMNhT:t(585)};const r={};return e[t(1300)]((e=>{var a=t;const{pair:o,time:b}=e;r[b]?(n&&d[a(1398)](o,d[a(875)])||!n&&d[a(1441)](o,d[a(1347)]))&&(r[b]=e):r[b]=e})),Object[t(1055)](r)}async function download(e){for(var n=_0x4bd045,t={jIYEs:n(1368)+n(789),dEQjL:n(715),thJEw:n(1410),QnSFy:n(1102),tlBRy:function(e,n){return e==n},BBaXl:function(e,n){return e(n)},xDudG:n(452),oqQRG:n(1373),KjQAh:n(1369),lEQJX:n(270)},d=t[n(620)][n(655)]("|"),r=0;;){switch(d[r++]){case"0":b[n(583)][n(572)]=t[n(562)];continue;case"1":var a=document[n(765)+n(1152)+"me"](t[n(367)])[0];continue;case"2":var o={HTrXw:t[n(1042)],leECK:function(e,d){return t[n(988)](e,d)}};continue;case"3":t[n(502)]($,t[n(612)])[n(324)](t[n(1266)],t[n(375)]);continue;case"4":var b=document[n(765)+n(559)](t[n(1245)]);continue;case"5":t[n(502)](result,e);continue;case"6":a[n(1391)]=function(){var e=n;b[e(583)][e(572)]=o[e(1424)]};continue;case"7":window[n(1391)]=function(e){var t=n;o[t(739)](e[t(385)],b)&&(b[t(583)][t(572)]=o[t(1424)])};continue}break}}function GetStringResult(e){var n=_0x4bd045,t={VcjkO:function(e,n){return e>n},EeJip:n(318),piKUb:function(e,n){return e<n},jDjiP:n(564),XTlZk:n(1338)};return t[n(313)](e,0)?t[n(1101)]:t[n(1175)](e,0)?t[n(458)]:t[n(626)]}function ErrorHistoric(e){console[_0x4bd045(952)](e)}function ConvertDate(e){var n=_0x4bd045,t=new Date(e);return{time:t[n(609)]()[n(862)]()[n(762)](2,"0")+":"+t[n(1268)]()[n(862)]()[n(762)](2,"0")}}function startPreload(){var e=_0x4bd045,n={yBDik:e(780)+e(921),nKBjL:function(e,n,t){return e(n,t)},jQHAR:function(e,n){return e(n)},qocEt:e(576)+e(1126)+e(1344),sBmIv:e(572),IsaJq:e(849),JmqOV:e(1372),OdzqG:e(522),xtMiH:e(1291),mpUZg:e(1e3),utFsK:function(e){return e()},iNrYp:function(e,n){return e+n},FTEdX:function(e,n){return e>=n},CfDcV:function(e,n){return e(n)},BzcZP:e(1464)+e(1339),BbrKT:e(773),QFfpG:e(1056),xqPwi:e(809)+e(1215),GRkZI:e(576)+e(652),DpxkB:function(e,n){return e(n)},stLVw:function(e,n,t){return e(n,t)}};n[e(648)]($,n[e(1371)])[e(407)](),n[e(1122)]($,n[e(730)])[e(407)](),n[e(1006)](setTimeout,(function(){for(var t=e,d=n[t(1072)][t(655)]("|"),r=0;;){switch(d[r++]){case"0":var a=0;continue;case"1":var o=n[t(805)](setInterval,(function(){var e=t;a+=25,i[e(583)][e(1448)]=b[e(1163)](a,"%"),x[e(1399)+"t"]=b[e(1163)](a,"%"),b[e(755)](a,100)&&(b[e(1287)](clearInterval,o),b[e(1025)]($,b[e(574)])[e(1405)](b[e(642)],(function(){var n=e;b[n(460)]($,b[n(679)])[n(407)](),b[n(460)]($,b[n(832)])[n(324)](b[n(1088)],b[n(335)]),b[n(700)](result)})))}),800);continue;case"2":n[t(1098)]($,n[t(1099)])[t(324)](n[t(436)],n[t(1386)]);continue;case"3":var b={oLwUi:function(e,d){return n[t(1098)](e,d)},CfQyG:n[t(969)],vgyrI:n[t(419)],fjIzx:n[t(404)],Xzbhr:n[t(1189)],LirvY:function(e){return n[t(287)](e)},SclnY:function(e,d){return n[t(934)](e,d)},vyKki:function(e,d){return n[t(383)](e,d)},BKdjB:function(e,d){return n[t(1098)](e,d)},cDCaI:function(e,d){return n[t(648)](e,d)},UZAPp:n[t(1371)],riKPY:n[t(1473)]};continue;case"4":n[t(287)](getHistoric);continue;case"5":var i=document[t(763)+t(1428)](n[t(614)]);continue;case"6":n[t(1098)]($,n[t(730)])[t(1154)]();continue;case"7":var x=document[t(763)+t(1428)](n[t(1005)]);continue}break}}),2e3)}function result(e){var n=_0x4bd045,t={Rbmre:function(e,n){return e==n},gSwgT:n(493)+n(815),ThvFZ:n(1172)};t[n(524)](e,void 0)?e=t[n(453)]:document[n(765)+n(559)](t[n(941)])[n(1078)]=e}function loading(e){var n=_0x4bd045,t={oCuXD:function(e,n){return e==n},mHNFZ:n(963)+"A",aXekC:n(493)+n(815),qhyxl:n(1172)};t[n(605)](e,t[n(843)])?result=t[n(1044)]:document[n(765)+n(559)](t[n(689)])[n(1078)]=result}function copy(){var e=_0x4bd045,n={TMgRz:e(1172),QLauP:e(960),wmAJl:e(1032)+e(483),sDTXz:e(464)};document[e(765)+e(559)](n[e(796)])[e(950)](),document[e(1125)+"d"](n[e(444)]),Swal[e(475)]({title:translations[currentLang][n[e(1422)]],icon:n[e(322)]})[e(1400)]((()=>{location[e(649)]()}))}function reloadPage(){var e=_0x4bd045;({tLRnw:function(e,n,t){return e(n,t)}})[e(957)](setTimeout,(function(){location[e(649)]()}),1)}function funcao(){var e=_0x4bd045,n={UmtTu:e(942),hWJFW:e(580)};document[e(765)+e(559)](n[e(1156)])[e(776)]=n[e(1264)]}function sleep(e){return new Promise((n=>setTimeout(n,e)))}document[_0x4bd045(763)+_0x4bd045(1428)](_0x4bd045(787))[_0x4bd045(380)+_0x4bd045(1340)](_0x4bd045(1451),(function(){({CZQgm:function(e){return e()}})[_0x4bd045(1173)](reloadPage)}));var images=[_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(719)+_0x4bd045(306),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(766)+_0x4bd045(306),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(379)+_0x4bd045(306),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(1108)+_0x4bd045(477),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(280)+_0x4bd045(477),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(1061)+_0x4bd045(1116),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(1263)+_0x4bd045(477),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(729)+_0x4bd045(1116),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(1238)+_0x4bd045(1116),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(1297)+_0x4bd045(306),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(570)+_0x4bd045(306),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(936)+_0x4bd045(306),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(1330)+_0x4bd045(477),_0x4bd045(1289)+_0x4bd045(906)+_0x4bd045(1167)+_0x4bd045(1159)+_0x4bd045(1116)],currentIndex=0,imageDisplay=document[_0x4bd045(765)+_0x4bd045(559)](_0x4bd045(321)+_0x4bd045(1462));function changeImage(){var e=_0x4bd045,n={HgbTU:function(e,n){return e%n},EivRz:function(e,n){return e+n}};imageDisplay[e(1307)]=images[currentIndex],currentIndex=n[e(353)](n[e(596)](currentIndex,1),images[e(632)])}function removeExistingDropdowns(){var e=_0x4bd045,n={zeHIu:e(1437)+e(1063)+"n"};document[e(763)+e(417)](n[e(1153)])[e(1300)]((n=>n[e(602)]()))}function changeLanguage(){var e=_0x4bd045,n={eqsCj:e(1057),SUDNR:function(e,n){return e(n)},mAKrG:function(e){return e()},xbIgE:function(e,n){return e(n)}};currentLang=document[e(765)+e(559)](n[e(360)])[e(1078)],n[e(768)](translateForm,currentLang),n[e(1426)](removeExistingDropdowns),n[e(377)](MultiselectDropdown,window[e(1211)+e(723)+e(861)])}changeImage(),setInterval(changeImage,5e3),document[_0x4bd045(380)+_0x4bd045(1340)](_0x4bd045(732)+_0x4bd045(831),(function(){var e=_0x4bd045,n={ajtxJ:function(e,n){return e(n)},qXyup:e(808)};n[e(668)](translateForm,n[e(1007)])}));var translations={"pt-br":{title:_0x4bd045(1103)+_0x4bd045(1221)+"s",subtitle:_0x4bd045(442)+_0x4bd045(1222)+"s",chooseAsset:_0x4bd045(294),minPercentage:_0x4bd045(1110)+_0x4bd045(1389),maxPercentage:_0x4bd045(1110)+_0x4bd045(727),timeframe:_0x4bd045(1182),days:_0x4bd045(414),martingales:_0x4bd045(866),direction:_0x4bd045(905),startTime:_0x4bd045(1262)+_0x4bd045(547),endTime:_0x4bd045(659)+_0x4bd045(1237),otc:_0x4bd045(546),m1:_0x4bd045(581)+_0x4bd045(1456),remove:_0x4bd045(273)+_0x4bd045(1030)+_0x4bd045(869),tomorrow:_0x4bd045(1414)+_0x4bd045(1045),copyNotification:_0x4bd045(349),removeMinutes:_0x4bd045(347)+_0x4bd045(492),placeholder:_0x4bd045(396),txtSelected:_0x4bd045(334)+"o",txtAll:_0x4bd045(1342),listaVazia:_0x4bd045(722)+_0x4bd045(745)+_0x4bd045(890)+_0x4bd045(1349)+_0x4bd045(549)+_0x4bd045(726)+_0x4bd045(575)+"."},en:{title:_0x4bd045(556)+_0x4bd045(472),subtitle:_0x4bd045(1436)+_0x4bd045(894),chooseAsset:_0x4bd045(1003),minPercentage:_0x4bd045(587)+_0x4bd045(1046),maxPercentage:_0x4bd045(1395)+_0x4bd045(1046),timeframe:_0x4bd045(1182),days:_0x4bd045(873),martingales:_0x4bd045(376)+"s:",direction:_0x4bd045(1443),startTime:_0x4bd045(1466)+_0x4bd045(671),endTime:_0x4bd045(644)+_0x4bd045(426),otc:_0x4bd045(1433),m1:_0x4bd045(308)+_0x4bd045(1274),remove:_0x4bd045(582)+_0x4bd045(783)+"es",tomorrow:_0x4bd045(1304)+_0x4bd045(1253),copyNotification:_0x4bd045(481),removeMinutes:_0x4bd045(1184)+_0x4bd045(457),placeholder:_0x4bd045(792),txtSelected:_0x4bd045(826),txtAll:_0x4bd045(494),listaVazia:_0x4bd045(531)+_0x4bd045(356)+_0x4bd045(1009)+_0x4bd045(610)+_0x4bd045(1249)+_0x4bd045(1258)+_0x4bd045(1363)+_0x4bd045(984)+"e."},es:{title:_0x4bd045(1103)+_0x4bd045(1205)+"es",subtitle:_0x4bd045(402)+_0x4bd045(409)+"as",chooseAsset:_0x4bd045(465),minPercentage:_0x4bd045(1166)+_0x4bd045(653),maxPercentage:_0x4bd045(1166)+_0x4bd045(606),timeframe:_0x4bd045(759)+_0x4bd045(852),days:_0x4bd045(485),martingales:_0x4bd045(709)+"s:",direction:_0x4bd045(523),startTime:_0x4bd045(1146)+_0x4bd045(806),endTime:_0x4bd045(1145)+_0x4bd045(547),otc:_0x4bd045(546),m1:_0x4bd045(1210)+_0x4bd045(569),remove:_0x4bd045(1314)+_0x4bd045(1226)+_0x4bd045(937),tomorrow:_0x4bd045(1414)+_0x4bd045(1137),copyNotification:_0x4bd045(349),removeMinutes:_0x4bd045(823)+_0x4bd045(336),placeholder:_0x4bd045(513)+"r",txtSelected:_0x4bd045(513)+"do",txtAll:_0x4bd045(1342),listaVazia:_0x4bd045(1374)+_0x4bd045(782)+_0x4bd045(658)+_0x4bd045(1411)+_0x4bd045(1430)+_0x4bd045(467)+_0x4bd045(387)+_0x4bd045(800)},bn:{title:_0x4bd045(728)+_0x4bd045(980),subtitle:_0x4bd045(348)+_0x4bd045(440),chooseAsset:_0x4bd045(772),minPercentage:_0x4bd045(896)+_0x4bd045(445),maxPercentage:_0x4bd045(326)+_0x4bd045(887),timeframe:_0x4bd045(281),days:_0x4bd045(853),martingales:_0x4bd045(1449),direction:_0x4bd045(1119),startTime:_0x4bd045(1305)+_0x4bd045(1115),endTime:_0x4bd045(470)+"ষ:",otc:_0x4bd045(1279)+"কা",m1:_0x4bd045(701)+_0x4bd045(1147)+")",remove:_0x4bd045(608)+_0x4bd045(1387),tomorrow:_0x4bd045(1087)+_0x4bd045(550),copyNotification:_0x4bd045(1467)+_0x4bd045(355),removeMinutes:_0x4bd045(630)+":",placeholder:_0x4bd045(804)+_0x4bd045(1180),txtSelected:_0x4bd045(799),txtAll:"সব",listaVazia:_0x4bd045(1416)+_0x4bd045(1081)+_0x4bd045(926)+_0x4bd045(1273)+_0x4bd045(977)+_0x4bd045(622)+_0x4bd045(999)+"।"},hi:{title:_0x4bd045(601)+_0x4bd045(786),subtitle:_0x4bd045(394)+_0x4bd045(1129),chooseAsset:_0x4bd045(637),minPercentage:_0x4bd045(1376)+_0x4bd045(643),maxPercentage:_0x4bd045(282)+_0x4bd045(650),timeframe:_0x4bd045(515),days:_0x4bd045(1384),martingales:_0x4bd045(1132)+":",direction:_0x4bd045(1066),startTime:_0x4bd045(554)+_0x4bd045(1012),endTime:_0x4bd045(1074)+"त:",otc:_0x4bd045(1359),m1:_0x4bd045(1292)+_0x4bd045(919),remove:_0x4bd045(1053)+_0x4bd045(1207)+"ं",tomorrow:_0x4bd045(532)+_0x4bd045(877),copyNotification:_0x4bd045(538)+_0x4bd045(1295),removeMinutes:_0x4bd045(824)+_0x4bd045(529),placeholder:_0x4bd045(1174),txtSelected:_0x4bd045(1425),txtAll:_0x4bd045(604),listaVazia:_0x4bd045(1069)+_0x4bd045(269)+_0x4bd045(918)+_0x4bd045(1420)+_0x4bd045(433)+_0x4bd045(371)+_0x4bd045(1132)+_0x4bd045(329)}},currentLang=_0x4bd045(808);function translateForm(e){for(var n=_0x4bd045,t={SUfey:n(1209)+n(586)+n(872)+n(298)+n(567),bGmoh:n(1394)+n(850)+n(337)+"']",PyeUX:n(1234),gEAUJ:n(1394)+n(850)+n(1183)+n(1409)+"]",ifMaT:n(526)+n(534),dWqgI:n(1348)+n(1447)+n(990)+"el",XfLHe:n(901),ybRJu:n(1394)+n(850)+n(1183)+n(1016)+"]",GqTrZ:n(930)+n(534),UnNnA:n(662)+n(1034)+n(1309)+n(888),nMVYo:n(602),WaLcP:n(842)+n(912)+n(568),lmNnn:n(369)+n(420),qktNA:n(1394)+n(850)+n(314)+"]",WbzBi:n(1041),SCrfm:n(933)+n(627),ctumI:n(848),ajwCc:n(575)+"s",MgvKu:n(1394)+n(850)+n(1068)+"']",lKEdF:n(1283),MDDRf:n(1076),KDedo:n(961)+"t",AiIHL:n(607)+n(1149)+n(301),FJfqJ:n(551),Iudui:n(753)+"er",imbNb:n(1281),zFwWj:n(842)+n(912)+n(974),qMGXr:n(932),bYmZq:n(1394)+n(850)+n(793)+n(1212),ZZQUQ:n(758)},d=t[n(1015)][n(655)]("|"),r=0;;){switch(d[r++]){case"0":document[n(763)+n(417)](t[n(825)])[0][n(1399)+"t"]=translations[e][t[n(599)]];continue;case"1":document[n(763)+n(417)](t[n(1178)])[0][n(1399)+"t"]=translations[e][t[n(613)]];continue;case"2":document[n(763)+n(1428)](t[n(878)])[n(1399)+"t"]=translations[e][t[n(735)]];continue;case"3":document[n(763)+n(417)](t[n(1438)])[0][n(1399)+"t"]=translations[e][t[n(1177)]];continue;case"4":document[n(763)+n(1428)](t[n(973)])[n(1399)+"t"]=translations[e][t[n(450)]];continue;case"5":document[n(763)+n(1428)](t[n(319)])[n(1399)+"t"]=translations[e][t[n(880)]];continue;case"6":document[n(763)+n(417)](t[n(1465)])[1][n(1399)+"t"]=translations[e][t[n(391)]];continue;case"7":document[n(763)+n(1428)](t[n(1022)])[n(1399)+"t"]=translations[e][t[n(557)]];continue;case"8":document[n(763)+n(417)](t[n(1465)])[2][n(1399)+"t"]=translations[e][t[n(438)]];continue;case"9":document[n(763)+n(417)](t[n(459)])[0][n(1399)+"t"]=translations[e][t[n(833)]];continue;case"10":document[n(763)+n(417)](t[n(1465)])[3][n(1399)+"t"]=translations[e][t[n(1332)]];continue;case"11":currentLang=e;continue;case"12":document[n(763)+n(1428)](t[n(1465)])[n(1399)+"t"]=translations[e][t[n(411)]];continue;case"13":document[n(763)+n(1428)](t[n(989)])[n(1399)+"t"]=translations[e][t[n(889)]];continue;case"14":document[n(763)+n(1428)](t[n(740)])[n(1399)+"t"]=translations[e][t[n(1401)]];continue;case"15":document[n(763)+n(1428)](t[n(388)])[n(1399)+"t"]=translations[e][t[n(880)]];continue;case"16":document[n(763)+n(1428)](t[n(703)])[n(1399)+"t"]=translations[e].m1;continue;case"17":document[n(763)+n(417)](t[n(854)])[0][n(1399)+"t"]=translations[e][t[n(1128)]];continue}break}}var style=document[_0x4bd045(471)+_0x4bd045(354)](_0x4bd045(583));function MultiselectDropdown(e){var n=_0x4bd045,t={Nfgyt:function(e,n){return e===n},VKNTK:n(384),OxNDA:function(e,n){return e!==n},mKEoX:function(e,n){return e===n},gUOhz:n(583),NQzvJ:n(437),jlWxQ:function(e,n){return e===n},NVoRG:n(1321),uyUpO:n(715),Fczoi:n(1059)+n(1277)+n(300)+n(1423)+n(893)+"r)",hwgne:function(e,n){return e==n},OetJM:function(e,n){return e===n},qeAKm:n(1251)+n(867),CFXyw:function(e,n,t){return e(n,t)},CohoP:n(1318),jDTzo:n(525),shkSU:n(1451),OUMyz:n(618),RTVxO:n(429),llCQW:n(357),uLuEn:n(841),ynxBZ:n(811)+"4",FTAPm:n(1102),TAJHi:n(1341),LXeEW:n(1039)+n(981)+n(1470),qHsbK:n(595),wQsYa:n(1393),aMskz:n(276)+n(1113),oAjzy:n(1075),bcvHg:n(1453),cLDAv:function(e,n){return e>n},YhGWi:n(276)+n(1472)+"s",QXouI:n(1239)+"d",demoj:function(e,n){return e+n},UVQaw:function(e,n){return e+n},QYiWn:function(e,n){return e==n},yCVUu:n(279)+"r",RSNbI:n(276)+n(473)+"ll",BrrPi:function(e,n,t){return e(n,t)},JKGro:n(276)+n(1010)+n(636)+n(1428),jtMtV:function(e,n,t){return e(n,t)},YXCCo:n(358)+n(661)+n(1403)+n(693)+n(1331),dgFYM:n(276)+n(1010),XNLoR:function(e,n,t){return e(n,t)},oVkqu:n(276)+n(1010)+n(341)+n(692),AgeYQ:function(e,n,t){return e(n,t)},GdiIj:n(276)+n(1010)+n(310),iuzRl:function(e,n,t){return e(n,t)},mlNrU:n(276)+n(1010)+n(343),uhTgO:n(995)+"ol",PnFcl:n(1235),OQFcj:function(e,n){return e===n},TTnPe:n(276)+n(1036),wcyea:n(1092),uEgRZ:n(1370)+"d",sclRu:n(859),QKEEO:n(1029),YgVge:n(778),FnzNm:n(1442)+n(1136)},d={search:!1,height:t[n(501)],placeholder:translations[currentLang][t[n(268)]],txtSelected:translations[currentLang][t[n(1216)]],txtAll:translations[currentLang][t[n(1121)]],txtRemove:t[n(1089)],txtSearch:t[n(1358)],...e};function r(e,d){var r=n,a={yLKsC:function(e,n){return t[_0x56f2(924)](e,n)},OQMzV:t[r(1194)],dgaPL:function(e,n){return t[r(1353)](e,n)},VImcA:function(e,n){return t[r(923)](e,n)},bbGZg:t[r(892)],EgDhU:function(e,n){return t[r(923)](e,n)},qqbAm:t[r(290)],DPbrR:function(e,n){return t[r(1415)](e,n)},ddTDB:t[r(1392)]},o=document[r(471)+r(354)](e);return t[r(1353)](d,void 0)&&Object[r(1261)](d)[r(1300)]((e=>{var n=r;a[n(521)](e,a[n(413)])?Array[n(779)](d[e])?d[e][n(1300)]((e=>""!==e?o[n(904)][n(323)](e):0)):a[n(754)](d[e],"")&&o[n(904)][n(323)](d[e]):a[n(571)](e,a[n(1296)])?Object[n(1261)](d[e])[n(1300)]((t=>{o[n(583)][t]=d[e][t]})):a[n(1224)](e,a[n(1198)])?a[n(702)](d[e],"")?o[n(776)]=a[n(462)]:o[n(1461)]=d[e]:o[e]=d[e]})),o}document[n(763)+n(417)](t[n(834)])[n(1300)]((e=>{var a=n,o={FFugP:t[a(446)],AQBrR:function(e,n){return t[a(744)](e,n)},yFbaF:function(e,n){return t[a(771)](e,n)},SviNY:t[a(698)],GYUDX:function(e,n,d){return t[a(1284)](e,n,d)},wyQAf:t[a(1313)],SyQLb:t[a(964)],YtVWW:t[a(1260)],wLKnx:t[a(917)],EnrUC:t[a(1419)],vvIAC:t[a(788)],OckNr:t[a(320)],jIqco:t[a(851)],NBbRA:function(e,n){return t[a(1353)](e,n)},sBQcY:t[a(781)],UeLvN:t[a(1247)],THvJH:t[a(1193)],ftaRo:t[a(770)],pxMWr:t[a(839)],cJiBh:t[a(881)],eypRe:t[a(1243)],sxuQc:t[a(1233)],JSzYh:function(e,n){return t[a(466)](e,n)},OHXsy:t[a(865)],ktjtn:t[a(948)],wdzzY:function(e,n){return t[a(1227)](e,n)},MSoSJ:function(e,n){return t[a(1445)](e,n)},zWLcY:function(e,n){return t[a(418)](e,n)},YPmVF:t[a(268)],PxeeY:t[a(430)],iACnZ:function(e,n,d){return t[a(1058)](e,n,d)},ooMjz:t[a(1082)],brbbj:function(e,n,d){return t[a(327)](e,n,d)},ttjlS:function(e,n,d){return t[a(1058)](e,n,d)},wSwGP:t[a(1140)],ceeqO:t[a(697)]},b=t[a(1058)](r,t[a(1313)],{class:t[a(1085)],style:{padding:d[a(583)]?.[a(1278)]??""}});e[a(583)][a(572)]=t[a(781)],e[a(1350)][a(909)+"re"](b,e[a(1232)+"g"]);var i=t[a(954)](r,t[a(1313)],{class:t[a(902)]}),x=t[a(1035)](r,t[a(1313)],{class:t[a(328)],style:{height:d[a(965)]}}),c=t[a(1469)](r,t[a(1419)],{class:[t[a(1421)]][a(801)]([d[a(874)+"t"]?.[a(384)]??t[a(708)]]),style:{width:t[a(628)],display:t[a(669)](e[a(1412)][t[a(1100)]]?.[a(1078)],t[a(1243)])?t[a(1140)]:t[a(781)]},placeholder:d[a(366)]});i[a(1379)+"d"](c),b[a(1379)+"d"](i),i[a(1379)+"d"](x),e[a(1306)+"s"]=()=>{var n=a,t={brKVr:o[n(490)],qqmMf:o[n(1148)],KgQOg:o[n(491)],PNTPC:o[n(1272)],nxBVb:o[n(1217)],JRbEC:function(e,t){return o[n(1270)](e,t)},gmdxv:o[n(946)],klTWT:o[n(675)],paeCf:o[n(304)],Kuaqw:o[n(1067)],uQHWJ:function(e,t,d){return o[n(363)](e,t,d)},OBYRF:o[n(911)],QEOuU:o[n(997)],JSJpj:function(e,t){return o[n(1270)](e,t)},KyNZt:o[n(1090)],IqiQV:o[n(1452)],nWJWe:o[n(340)],RtguT:function(e,t){return o[n(966)](e,t)},ZUTgW:o[n(616)],SwQfc:o[n(504)],zbZSs:function(e,t){return o[n(390)](e,t)},ryHGI:function(e,t){return o[n(1293)](e,t)},rTkjq:function(e,t){return o[n(992)](e,t)},pPSvB:o[n(953)]};if(x[n(776)]="",o[n(992)](e[n(1412)][o[n(552)]]?.[n(1078)],o[n(1452)])){var c=o[n(685)](r,o[n(1361)],{class:o[n(629)]}),u=o[n(397)](r,o[n(1148)],{type:o[n(378)]});c[n(1379)+"d"](u),c[n(1379)+"d"](o[n(309)](r,o[n(401)],{text:d[n(859)]})),c[n(380)+n(1340)](o[n(1067)],(()=>{for(var d=n,r=t[d(295)][d(655)]("|"),a=0;;){switch(r[a++]){case"0":c[d(763)+d(1428)](t[d(991)])[d(525)]=!c[d(763)+d(1428)](t[d(991)])[d(525)];continue;case"1":c[d(904)][d(790)](t[d(1381)]);continue;case"2":x[d(763)+d(417)](t[d(891)])[d(1300)]((e=>{var n=d;b[n(563)](e[n(583)][n(572)],b[n(864)])&&(e[n(763)+n(1428)](b[n(1218)])[n(525)]=o,e[n(451)][n(374)]=o)}));continue;case"3":var o=c[d(763)+d(1428)](t[d(991)])[d(525)];continue;case"4":e[d(456)+d(354)](new Event(t[d(1109)]));continue;case"5":var b={pQJFC:function(e,n){return t[d(1134)](e,n)},sLOYw:t[d(311)],rsloc:t[d(991)]};continue}break}})),u[n(380)+n(1340)](o[n(1067)],(()=>{var e=n;u[e(525)]=!u[e(525)]})),e[n(380)+n(1340)](o[n(1217)],(()=>{var e=n;let t=Array[e(1008)](x[e(763)+e(417)](o[e(1272)]))[e(516)]((n=>n[e(583)][e(572)]!==e(1102)))[e(500)]((n=>!n[e(763)+e(1428)](e(429))[e(525)]));u[e(525)]&&t?u[e(525)]=!1:o[e(1179)](u[e(525)],!1)&&o[e(657)](t,void 0)&&(u[e(525)]=!0)})),x[n(1379)+"d"](c)}Array[n(1008)](e[n(1301)])[n(897)]((t=>{for(var d=n,a=o[d(907)][d(655)]("|"),b=0;;){switch(a[b++]){case"0":var i=o[d(363)](r,o[d(1361)],{class:t[d(374)]?o[d(491)]:"",optEl:t});continue;case"1":i[d(1379)+"d"](c);continue;case"2":c[d(380)+d(1340)](o[d(1067)],(()=>{var e=d;c[e(525)]=!c[e(525)]}));continue;case"3":i[d(1379)+"d"](o[d(363)](r,o[d(401)],{text:t[d(437)]}));continue;case"4":x[d(1379)+"d"](i);continue;case"5":i[d(380)+d(1340)](o[d(1067)],(()=>{var n=d;i[n(904)][n(790)](u[n(1208)]),i[n(763)+n(1428)](u[n(1446)])[n(525)]=!i[n(763)+n(1428)](u[n(1446)])[n(525)],i[n(451)][n(374)]=!i[n(451)][n(374)],e[n(456)+n(354)](new Event(u[n(1142)]))}));continue;case"6":t[d(1250)]=i;continue;case"7":var c=o[d(363)](r,o[d(1148)],{type:o[d(378)],checked:t[d(374)]});continue;case"8":var u={ptjSm:o[d(491)],VInow:o[d(1148)],nirpY:o[d(1217)]};continue}break}})),b[n(518)]=i,b[n(488)]=()=>{for(var a=n,o=t[a(331)][a(655)]("|"),i=0;;){switch(o[i++]){case"0":b[a(763)+a(417)](t[a(405)])[a(1300)]((e=>b[a(1431)+"d"](e)));continue;case"1":var x=Array[a(1008)](e[a(597)+a(785)]);continue;case"2":var c={vGhTR:t[a(1440)],QvdDP:function(e,n,d){return t[a(519)](e,n,d)},coywB:t[a(1190)],kDIep:t[a(996)],ABolW:function(e,n){return t[a(1417)](e,n)},AkUGC:t[a(461)],KIAaw:t[a(844)],lykrF:t[a(623)]};continue;case"3":t[a(663)](x[a(632)],e[a(1412)][t[a(949)]]?.[a(1078)]??5)?b[a(1379)+"d"](t[a(519)](r,t[a(1190)],{class:[t[a(996)],t[a(449)]],text:t[a(929)](t[a(724)](x[a(632)]," "),d[a(1370)+"d"])})):x[a(897)]((n=>{var t=a,o=c[t(704)](r,c[t(1186)],{class:c[t(979)],text:n[t(437)],srcOption:n});c[t(339)](e[t(1412)][c[t(1322)]]?.[t(1078)],c[t(303)])&&o[t(1379)+"d"](c[t(704)](r,c[t(1186)],{class:c[t(1315)],text:"🗙",title:d[t(425)],onclick:e=>{var n=t;o[n(976)][n(1250)][n(456)+n(354)](new Event(c[n(1377)])),b[n(488)](),e[n(818)+n(710)]()}})),b[t(1379)+"d"](o)}));continue;case"4":t[a(1254)](0,e[a(597)+a(785)][a(632)])&&b[a(1379)+"d"](t[a(519)](r,t[a(1190)],{class:t[a(651)],text:e[a(1412)][t[a(651)]]?.[a(1078)]??d[a(279)+"r"]}));continue}break}},b[n(488)]()},e[a(1306)+"s"](),c[a(380)+a(1340)](t[a(1419)],(()=>{var e=a,n={OoHRX:o[e(401)],voqHa:o[e(428)],sRuXl:o[e(946)]};x[e(763)+e(417)](o[e(1077)])[e(1300)]((t=>{var d=e,r=t[d(763)+d(1428)](n[d(555)])[d(1461)][d(1091)+"e"]();t[d(583)][d(572)]=r[d(810)](c[d(1078)][d(1091)+"e"]())?n[d(1127)]:n[d(1141)]}))})),b[a(380)+a(1340)](t[a(1260)],(()=>{var e=a;b[e(518)][e(583)][e(572)]=t[e(1140)],c[e(855)](),c[e(950)]()})),document[a(380)+a(1340)](t[a(1260)],(function(e){var n=a;!b[n(512)](e[n(385)])&&(i[n(583)][n(572)]=o[n(946)],b[n(488)]())}))}))}style[_0x4bd045(1444)+"te"]("id",_0x4bd045(276)+_0x4bd045(1080)+_0x4bd045(721)),style[_0x4bd045(776)]=_0x4bd045(822)+_0x4bd045(1403)+_0x4bd045(987)+_0x4bd045(733)+_0x4bd045(677)+_0x4bd045(365)+_0x4bd045(928)+_0x4bd045(940)+_0x4bd045(558)+_0x4bd045(1165)+_0x4bd045(947)+_0x4bd045(1200)+_0x4bd045(955)+_0x4bd045(577)+_0x4bd045(750)+_0x4bd045(1302)+_0x4bd045(1120)+_0x4bd045(1155)+_0x4bd045(884)+_0x4bd045(718)+_0x4bd045(916)+_0x4bd045(271)+_0x4bd045(1065)+_0x4bd045(667)+_0x4bd045(535)+_0x4bd045(1093)+_0x4bd045(579)+_0x4bd045(272)+_0x4bd045(591)+_0x4bd045(774)+_0x4bd045(837)+_0x4bd045(1185)+_0x4bd045(951)+_0x4bd045(455)+_0x4bd045(982)+_0x4bd045(736)+_0x4bd045(915)+_0x4bd045(611)+_0x4bd045(1402)+_0x4bd045(389)+_0x4bd045(645)+_0x4bd045(1354)+_0x4bd045(1196)+_0x4bd045(1011)+_0x4bd045(285)+_0x4bd045(1062)+_0x4bd045(913)+_0x4bd045(1111)+_0x4bd045(1138)+_0x4bd045(1354)+_0x4bd045(299)+_0x4bd045(621)+_0x4bd045(1439)+_0x4bd045(699)+_0x4bd045(1135)+_0x4bd045(434)+_0x4bd045(975)+_0x4bd045(695)+_0x4bd045(276)+_0x4bd045(1010)+_0x4bd045(403)+_0x4bd045(1303)+_0x4bd045(495)+_0x4bd045(392)+_0x4bd045(1310)+_0x4bd045(1105)+_0x4bd045(1427)+_0x4bd045(345)+_0x4bd045(935)+_0x4bd045(447)+_0x4bd045(1408)+_0x4bd045(682)+_0x4bd045(278)+_0x4bd045(1259)+_0x4bd045(416)+_0x4bd045(448)+_0x4bd045(959)+_0x4bd045(945)+_0x4bd045(711)+_0x4bd045(283)+_0x4bd045(707)+_0x4bd045(641)+_0x4bd045(968)+_0x4bd045(344)+_0x4bd045(720)+_0x4bd045(1406)+_0x4bd045(486)+_0x4bd045(694)+_0x4bd045(1097)+_0x4bd045(495)+_0x4bd045(392)+_0x4bd045(333)+_0x4bd045(1241)+_0x4bd045(431)+_0x4bd045(962)+_0x4bd045(1176)+_0x4bd045(307)+_0x4bd045(1327)+_0x4bd045(1333)+_0x4bd045(362)+(_0x4bd045(468)+_0x4bd045(678)+_0x4bd045(372)+_0x4bd045(830)+_0x4bd045(288)+_0x4bd045(1071)+_0x4bd045(822)+_0x4bd045(1403)+_0x4bd045(858)+_0x4bd045(798)+_0x4bd045(696)+_0x4bd045(871)+_0x4bd045(967)+_0x4bd045(711)+_0x4bd045(283)+_0x4bd045(707)+_0x4bd045(279)+_0x4bd045(1298)+_0x4bd045(293)+_0x4bd045(656)+_0x4bd045(364)+_0x4bd045(305)+_0x4bd045(412)+_0x4bd045(277)+_0x4bd045(827)+_0x4bd045(1094)+_0x4bd045(1158)+_0x4bd045(1383)+_0x4bd045(640)+_0x4bd045(1320)+_0x4bd045(506)+_0x4bd045(910)+_0x4bd045(393)+_0x4bd045(422)+_0x4bd045(1220)+_0x4bd045(712)+_0x4bd045(1229)+_0x4bd045(791)+_0x4bd045(983)+_0x4bd045(427)+_0x4bd045(312)+_0x4bd045(816)+_0x4bd045(509)+_0x4bd045(1157)+_0x4bd045(899)+_0x4bd045(1255)+_0x4bd045(528)+_0x4bd045(895)+_0x4bd045(624)+_0x4bd045(542)+_0x4bd045(1317)+_0x4bd045(1265)+_0x4bd045(695)+_0x4bd045(276)+_0x4bd045(1010)+_0x4bd045(497)+_0x4bd045(507)+_0x4bd045(1230)+_0x4bd045(1020)+_0x4bd045(508)+_0x4bd045(406)+_0x4bd045(1328)+_0x4bd045(469)+_0x4bd045(548)+_0x4bd045(734)+_0x4bd045(1450)+_0x4bd045(382)+_0x4bd045(1050)+_0x4bd045(1240)+_0x4bd045(807)+_0x4bd045(1021)+_0x4bd045(656)+_0x4bd045(364)+_0x4bd045(305)+_0x4bd045(820)+_0x4bd045(714)+_0x4bd045(1282)+_0x4bd045(1024)+_0x4bd045(312)+_0x4bd045(617)+_0x4bd045(797)+_0x4bd045(829)+_0x4bd045(688)+_0x4bd045(1124)+_0x4bd045(1157)+_0x4bd045(899)+_0x4bd045(286)+_0x4bd045(274)+_0x4bd045(297)+_0x4bd045(509)+_0x4bd045(1157)+_0x4bd045(899)+_0x4bd045(1033)+_0x4bd045(1096)+_0x4bd045(764)+_0x4bd045(903)+_0x4bd045(868)+_0x4bd045(835)+_0x4bd045(1427)+_0x4bd045(819))+(_0x4bd045(1432)+_0x4bd045(364)+_0x4bd045(305)+_0x4bd045(593)+_0x4bd045(660)+_0x4bd045(435)+_0x4bd045(588)),document[_0x4bd045(747)][_0x4bd045(1379)+"d"](style),window[_0x4bd045(380)+_0x4bd045(1340)](_0x4bd045(530),(()=>{var e=_0x4bd045;({sjvZN:function(e,n){return e(n)}})[e(900)](MultiselectDropdown,window[e(1211)+e(723)+e(861)])}));</script>
+    <h1 class="sr-only">SIO TRADER</h1>
+    <div id="root"></div>
+    
+    
 </body>
 </html>
